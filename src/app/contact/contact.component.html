@@ -1,0 +1,80 @@
+<form >
+        
+</form>
+
+<section class="contact no-padding-bottom" data-scroll-index="6" id="contactSection">
+  <div class="container margin-100px-bottom md-margin-70px-bottom sm-margin-50px-bottom">
+      <div class="row">
+          <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+              <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">Contact</h3>
+          </div>
+      </div>
+      <!-- [ngClass]="classCss" (blur)="changeClass()" (click)="changeClass()" class="mfIcon default"-->
+      <div class="row">
+          <div class="col-lg-12">
+                <form class="mailform off2 rd-mailform"><!--method="post" action="bat/rd-mailform.php" -->
+                      <input type="hidden" name="form-type" value="contact">
+                      <div class="row">
+                          <div class="col-md-6 mfInput">
+                              <input #box class="inputBox" (focus)="changeClass(box, 1)" (blur)="unfocus(box.value, 1)" type="text" name="name" data-constraints="@LettersOnly @NotEmpty">
+                          <span class="mfValidation"></span><span class="mfIcon default"><span></span></span><span [ngClass]="classCss1">Your Name:</span></div>
+                          <div class="col-md-6 mfInput">
+                              <input #box1 class="inputBox" (focus)="changeClass(box, 2)" (blur)="unfocus(box1.value, 2)"  type="text" name="phone" data-constraints="@Phone">
+                          <span class="mfValidation"></span><span class="mfIcon default"><span></span></span><span [ngClass]="classCss2">Telephone:</span></div>
+                          <div class="col-md-6 mfInput">
+                              <input #box2 class="inputBox" (focus)="changeClass(box, 3)" (blur)="unfocus(box2.value, 3)" type="text" name="email" data-constraints="@Email @NotEmpty">
+                          <span class="mfValidation"></span><span class="mfIcon default"><span></span></span><span [ngClass]="classCss3">Email:</span></div>
+                          <div class="col-md-6 mfInput">
+                              <input #box3 class="inputBox" (focus)="changeClass(box, 4)" (blur)="unfocus(box3.value, 4)" type="text" name="subject" data-constraints="@NotEmpty">
+                          <span class="mfValidation"></span><span class="mfIcon default"><span></span></span><span [ngClass]="classCss4">Subject:</span></div>                                
+                          <div class="col-md-12 mfInput">
+                              <textarea #box4 class="inputBox" (focus)="changeClass(box, 5)" (blur)="unfocus(box4.value, 5)" name="message" rows="5" data-constraints="@NotEmpty"></textarea>
+                          <span class="mfValidation"></span><span class="mfIcon default"><span></span></span><span [ngClass]="classCss5">Message:</span></div>
+                          
+                      </div>
+                </form>
+
+                <div class="mfControls col-md-12 text-center">
+                             <button type="primary" class="btn white mfProgress" (click)="sendEmail()"><span class="cnt">Send Message</span><span class="loader"></span><span class="msg"></span></button>
+                          </div>
+          </div>
+      </div> 
+
+      
+  </div>
+
+  <div class="bg-light-gray padding-30px-tb border-top border-color-medium-gray">
+      <div class="container">
+          <div class="row info">
+
+              <!-- start quickly contact -->
+
+              <div class="col-lg-4 col-md-3 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+                  <!-- <span class="icon font-size32"><i class="icon-phone"></i></span> -->
+                  <i class="fa fa-mobile" aria-hidden="true" id="phoneIcon"></i>
+                  <div class="cont">
+                      <h6>Phone</h6>
+                      <p>(+55) 11 99990-0949</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-5 item text-center border-right xs-no-border-right xs-border-bottom border-color-medium-gray xs-margin-20px-bottom xs-padding-20px-bottom">
+                  <span class="fa fa-map-marker" id="mapIcon"><i class="icon-map" ></i></span>
+                  <div class="cont">
+                      <h6>Address</h6>
+                      <p>Rua Tomás Carvalhal 310, Brasil - SP</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 item text-center">
+                  <span class="fa fa-envelope-open-o" id="mapEmail"><i class="icon-envelope"></i></span>
+                  <div class="cont">
+                      <h6>Email</h6>
+                      <p>vrichtmann@gmail.com</p>
+                  </div>
+              </div>
+
+          </div>
+          <!-- end quickly contact -->
+      </div>
+  </div>
+
+</section>

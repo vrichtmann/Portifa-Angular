@@ -1,0 +1,11 @@
+.carousel .item {
+    width: 100%; /*slider width*/
+   
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+#carrouselIMG{
+    margin-top: 70px;
+}

@@ -1,0 +1,72 @@
+
+
+
+<div class="container text-center">
+    <!-- <h1> Click Me </h1> -->
+    <!-- Large modal -->
+    <!-- <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
+
+    <div class="modal fade {{targetClass}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="top: 20%;">
+        <div class="modal-content">
+          <div id="carousel-{{targetClass}}" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner" style="text-align: -webkit-center;background-color: #1c1c1c;">
+              
+             <div class="item active">
+                <!-- <iframe width="853" height="480" src="{{https://www.youtube.com/ssurZ7wNb7A}}" frameborder="0" allowfullscreen ng-show="showvideo"></iframe> -->
+                <!-- <iframe id="testimony-video" class="youtube-video" type="text/html" height="400px" width="100%" src="https://www.youtube.com/watch?v=JL121HijBPs" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+                  <img class="img-responsive" src="assets/img/portfolio/{{images[0]}}" alt="...">
+              </div> 
+
+              <li *ngFor="let image of images;let first=first;let i= index;"  [ngClass]="['item']">
+                      <img class="img-responsive" src="assets/img/portfolio/{{image}}" alt="..." [ngClass]="{active: first}">
+                      <!-- <div class="carousel-caption">
+                        One Image
+                      </div>  -->
+              </li>
+            </div>
+
+            <div class="page-footer">
+              <div class="Box-sc-1iuaiq8-0 bwAXcI" id="modalContent">
+                <div _ngcontent-c13="" class="Box-sc-1iuaiq8-0 jMaisK2 nomeEmpresa">
+                    <div _ngcontent-c13="" class="Box-sc-1iuaiq8-0 oTpQh">
+                      <strong _ngcontent-c13="">Plataform:</strong>
+                    </div>
+                  <div _ngcontent-c13="" height="100px" label="Assunto" name="message" style="width: 100%; resize: none;" type="text">{{plataform}}</div>
+                </div>
+
+                <div id="divisoria"></div>
+
+                <div _ngcontent-c13="" class="Box-sc-1iuaiq8-0 jMaisK2">
+                    <div _ngcontent-c13="" class="Box-sc-1iuaiq8-0 oTpQh">
+                      <strong _ngcontent-c13="">Description:</strong>
+                    </div>
+
+                    <a href='{{description}}'>{{description}}</a>
+                  <!-- <div _ngcontent-c13="" height="100px" label="Assunto" name="message" style="width: 100%; resize: none;" type="text"> -->
+                    
+                  <!-- </div> -->
+
+                </div>
+              </div>
+            </div>
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-{{targetClass}}" role="button" data-slide="prev">
+                <div class="arrowLeft">
+                    <i class="fa fa-arrow-circle-left" id="arrowSlider"></i>
+                </div>
+               
+            </a>
+            <a class="right carousel-control" href="#carousel-{{targetClass}}" role="button" data-slide="next" >
+               <div class="arrowRight">
+                <i class="fa fa-arrow-circle-right" id="arrowSlider"></i>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+    </div>
+    </div>
+</div>

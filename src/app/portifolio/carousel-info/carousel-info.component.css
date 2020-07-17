@@ -1,0 +1,150 @@
+.page-header {
+    padding-bottom: 0px; 
+    margin: -13px 0px -5px;
+    border-bottom: 0px solid #eee;
+    background-color: #474747;
+    border-radius: 40px;
+    height: 4px;
+}
+
+h3 {
+    font-size: 34px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    color: #69ecb6;
+}
+
+.carousel-control.left {
+    background-image: none;
+    filter: none;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    filter: none;
+    background-repeat: none;
+}
+
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    margin-top: 0 !important; 
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    top: 90% !important;
+}
+
+#arrowSlider{
+    top: 87% !important; 
+    color: #1c1c1c;/*#69ecb6;*/
+     transform: Scale(2, 2);
+      position: absolute;
+}
+
+
+.jMaisK2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 4px;
+}
+
+.bwAXcI {
+    display: -webkit-box;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: -webkit-auto;
+    margin-left: 24%;
+}
+
+.nomeEmpresa{
+    margin-right: 209px;
+}
+
+#divisoria{
+    width: 1px;
+    background-color: rebeccapurple;
+    margin-right: 86px;
+    margin-left: -87px;
+}
+
+@media (max-width: 1000px) {
+    .nomeEmpresa {
+        margin-right: 107px !important;
+    }
+    #divisoria {
+        width: 1px;
+        background-color: rebeccapurple;
+        margin-right: 48px;
+        margin-left: -58px;
+    }
+}
+
+@media (max-width: 550px) {
+    #arrowSlider{
+        top: 84% !important; 
+        margin-left: -9px;
+    }
+
+    .nomeEmpresa {
+        margin-right: 11px;
+        margin-left: -18px;
+    }
+
+    #divisoria {
+        width: 1px;
+        background-color: rebeccapurple;
+        margin-right: 16px;
+        margin-left: -91px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .nomeEmpresa {
+        margin-right: 11px;
+        margin-left: -33px-24px;
+    }
+
+    #divisoria {
+        width: 1px;
+        background-color: rebeccapurple;
+        margin-right: 10px;
+        margin-left: -98px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .arrowLeft{
+        margin-left: 19px;
+    }
+    .arrowRight{
+        margin-left: -17px;
+    }
+
+    .nomeEmpresa {
+        margin-right: 11px;
+        margin-left: -33px-24px;
+        font-size: 10px;
+    }
+
+    .jMaisK2[_ngcontent-c8] {
+        font-size: 10px;
+        margin-left: -6px;
+    }
+
+    #arrowSlider{
+        top: 80% !important;
+        margin-left: -10px;
+    }
+}

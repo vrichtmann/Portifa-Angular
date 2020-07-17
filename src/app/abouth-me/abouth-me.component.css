@@ -1,0 +1,126 @@
+.margin-70px-bottom {
+    margin-bottom: 70px;
+}
+.center-col {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center {
+    text-align: center!important;
+}
+
+section {
+    padding: 29px 0;
+    position: relative;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.font-size34 {
+    font-size: 34px;
+    line-height: normal;
+}
+
+.section-title:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.skills .prog-item {
+    margin-bottom: 25px;
+}
+.skills .prog-item .skills-progress {
+    width: 100%;
+    height: 5px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+}
+
+.skills .prog-item .skills-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #474747;
+    width: 10%;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.skills .prog-item .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 10px;
+    color: #777;
+}
+
+.btn-primary {
+    color: #6aedb6;
+    background-color: #474747;
+    border-color: #1c1c1c;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #6aedb6;
+    background-color: #686868;
+    border-color: #353535;
+}
+
+.buttonCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 9px 22px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
+    color: #232323;
+    letter-spacing: .5px;
+    line-height: inherit;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn.white {
+    background: #fff;
+    border: 2px solid #232323;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
+    color: #232323;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn.white:hover, .btn.white:active {
+    background:#474747;
+    color: #6aedb6;
+    border-color:#474747;
+}

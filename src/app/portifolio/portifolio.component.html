@@ -1,0 +1,174 @@
+<section class="portfolio" data-scroll-index="3" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center" id="myPortifolio">
+                <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title" id="myPortifolioTXT">My Portfolio</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Start links -->
+            <div class="filtering col-sm-12 text-center">
+                <span #filter1 (click)="clickFilter(filter1, 'all')" class="filterBT active">All</span>
+                <span #filter2 (click)="clickFilter(filter2, 'mobille')" class="filterBT">Mobille</span>
+                <span #filter3 (click)="clickFilter(filter3, 'webGame')" class="filterBT">Web Game</span>
+                <span #filter4 (click)="clickFilter(filter4, 'socialGame')" class="filterBT">Social Game</span>
+                <span #filter5 (click)="clickFilter(filter5, 'elearning')" class="filterBT">E-Learning</span>
+            </div>
+            <!-- End links -->
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'Curation'" [courseName]="'Curation'" [popupTarget]="'.Curation_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'CartalogoDeCursos'" [courseName]="'Catalogo de Cursos'" [popupTarget]="'.CartalogoDeCursos_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'EducacaoHandsOn'" [courseName]="'Educacao Hands On'" [popupTarget]="'.EducacaoHandsOn_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'PowerLearning'" [courseName]="'Power Learning'" [popupTarget]="'.PowerLearning_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items mobille" >
+                <app-portifolio-content [productImg]="'MathForce'" [courseName]="'Math Force'" [popupTarget]="'.MathForce_popup'"></app-portifolio-content>
+            </div> 
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items mobille" >
+                <app-portifolio-content [productImg]="'TrilhaDeCarreira'" [courseName]="'Trilha De Carreira'" [popupTarget]="'.TrilhaDeCarreira_popup'"></app-portifolio-content>
+            </div> 
+           
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'JogoDaVelha'" [courseName]="'Jogo Da Velha'" [popupTarget]="'.JogoDaVelha_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items elearning" >
+                <app-portifolio-content [productImg]="'BrinqueMonte'" [courseName]="'Brinque Monte'" [popupTarget]="'.BrinqueMonte_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'ZombieParty'" [courseName]="'Zombie Party'" [popupTarget]="'.ZombieParty_popup'"></app-portifolio-content>
+            </div> 
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'Nilba'" [courseName]="' Nilba e os Desastronautas'" [popupTarget]="'.Nilba_popup'" ></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items socialGame" >
+                <app-portifolio-content [productImg]="'VidaRock2'" [courseName]="'Vida Rock 2'" [popupTarget]="'.VidaRock2_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'HeartLess'" [courseName]="'HeartLess'" [popupTarget]="'.HeartLess_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'DevilsSlap'" [courseName]="'Devils Slap'" [popupTarget]="'.DevilsSlap_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'HomiBala'" [courseName]="'Homi Bala'" [popupTarget]="'.HomiBala_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'SavageDagger'" [courseName]="'Savage Dagger'" [popupTarget]="'.SavageDagger_popup'"></app-portifolio-content>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-sm-6 col-xs-12 items webGame" >
+                <app-portifolio-content [productImg]="'Minitais'" [courseName]="'Minitais'" [popupTarget]="'.Minitais_popup'"></app-portifolio-content>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    <app-carousel-info [images]="['CartalogoTreinamentos/1.png','CartalogoTreinamentos/2.png', 'CartalogoTreinamentos/3.png', 'CartalogoTreinamentos/4.png', 'CartalogoTreinamentos/5.png']"
+                       [plataform]="'Angular 6'" 
+                       [description]="'https://catalogocursos.azurewebsites.net'"
+                       [targetClass]="'CartalogoDeCursos_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['EducacaoHandsOn/1.png','EducacaoHandsOn/2.png', 'EducacaoHandsOn/3.png', 'EducacaoHandsOn/4.png', 'EducacaoHandsOn/5.png','EducacaoHandsOn/6.png', 'EducacaoHandsOn/7.png', 'EducacaoHandsOn/8.png', 'EducacaoHandsOn/9.png', 'EducacaoHandsOn/10.png']"
+                       [plataform]="'HTML 5 / Scorm'" 
+                       [description]="'E-Learning'"
+                       [targetClass]="'EducacaoHandsOn_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['PowerLearning/1.jpg','PowerLearning/2.jpg', 'PowerLearning/3.jpg', 'PowerLearning/4.jpg', 'PowerLearning/5.jpg','PowerLearning/6.jpg', 'PowerLearning/7.jpg']"
+                       [plataform]="'HTML 5/ JavaScript / Scorm'" 
+                       [description]="'E-Learning | Game'"
+                       [targetClass]="'PowerLearning_popup'"></app-carousel-info>
+
+                       
+
+    <app-carousel-info [images]="['MathForce/1.png','MathForce/2.png', 'MathForce/3.png', 'MathForce/4.png']"
+                       [plataform]="'Unity 3D'" 
+                       [description]="'Jogo de Matemática'"
+                       [targetClass]="'MathForce_popup'"></app-carousel-info>
+    
+    <app-carousel-info [images]="['TrilhaDeCarreira/1.jpg','TrilhaDeCarreira/2.jpg', 'TrilhaDeCarreira/3.jpg', 'TrilhaDeCarreira/4.jpg']"
+                       [plataform]="'HTML 5/ JavaScript'" 
+                       [description]="'Mapa do trilha de Carreira'"
+                       [targetClass]="'TrilhaDeCarreira_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['JogoDaVelha/1.png','JogoDaVelha/2.png', 'JogoDaVelha/3.png', 'JogoDaVelha/4.png']"
+                       [plataform]="'Create JS'" 
+                       [description]="'E-Learning'"
+                       [targetClass]="'JogoDaVelha_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['BrinqueMonte/1.png','BrinqueMonte/2.png', 'BrinqueMonte/3.png', 'BrinqueMonte/4.png', 'BrinqueMonte/5.png']"
+                       [plataform]="'Create JS'" 
+                       [description]="'E-Learning'"
+                       [targetClass]="'BrinqueMonte_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['Curation/1.jpg','Curation/2.jpg', 'Curation/3.jpg', 'Curation/4.jpg', 'Curation/5.jpg', 'Curation/6.jpg']"
+                       [plataform]="'HTML/Javascript/Scorm'" 
+                       [description]="'E-Learning'"
+                       [targetClass]="'Curation_popup'"></app-carousel-info>
+    
+    <app-carousel-info [images]="['ZombieParty/1.png','ZombieParty/2.png', 'ZombieParty/3.png', 'ZombieParty/4.png', 'ZombieParty/5.png', 'ZombieParty/6.png', 'ZombieParty/7.png', 'ZombieParty/8.png']"
+                       [plataform]="'Unity 3D'" 
+                       [description]="'Multiplayer'"
+                       [targetClass]="'ZombieParty_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['DevilsSlap/1.png','DevilsSlap/2.png', 'DevilsSlap/3.png', 'DevilsSlap/4.png']"
+                       [plataform]="'Flash As3'" 
+                       [description]="'Plataform/Puzzle'"
+                       [targetClass]="'DevilsSlap_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['HomiBala/1.png','HomiBala/2.png', 'HomiBala/3.png', 'HomiBala/4.png', 'HomiBala/5.png']"
+                       [plataform]="'Flash As3'" 
+                       [description]="'Plataform 2D'"
+                       [targetClass]="'HomiBala_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['SavageDagger/1.jpg','SavageDagger/2.jpg', 'SavageDagger/3.jpg', 'SavageDagger/4.jpg', 'SavageDagger/5.jpg', 'SavageDagger/6.jpg']"
+                       [plataform]="'Unity 3D | GameJam'" 
+                       [description]="'TopDown (Enemies)'"
+                       [targetClass]="'SavageDagger_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['Minitais/1.png','Minitais/2.png']"
+                       [plataform]="'Unity 3D | GameJam'" 
+                       [description]="'Plataform 2D'"
+                       [targetClass]="'Minitais_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['Nilba/1.png','Nilba/2.png', 'Nilba/3.png', 'Nilba/4.png', 'Nilba/5.png', 'Nilba/6.png','Nilba/7.png', 'Nilba/8.png', 'Nilba/9.png', 'Nilba/10.png']"
+                       [plataform]="'Flash As3'" 
+                       [description]="'Beating up'"
+                       [targetClass]="'Nilba_popup'"></app-carousel-info>
+
+    <app-carousel-info [images]="['HeartLess/1.png','HeartLess/2.png', 'HeartLess/3.png', 'HeartLess/4.png', 'HeartLess/5.png', 'HeartLess/6.png','HeartLess/7.png']"
+                       [plataform]="'Flixel'" 
+                       [description]="'Plataform 2D'"
+                       [targetClass]="'HeartLess_popup'"></app-carousel-info>
+    
+    <app-carousel-info [images]="['VidaRock2/1.png','VidaRock2/2.png', 'VidaRock2/3.png']"
+                       [plataform]="'Flash As3'" 
+                       [description]="'Social Game'"
+                       [targetClass]="'VidaRock2_popup'"></app-carousel-info>
+
+    
+
+    
+</section>
+ 
