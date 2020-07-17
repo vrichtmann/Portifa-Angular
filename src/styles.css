@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css";
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap'; */
+@import '~material-design-icons/iconfont/material-icons.css';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 0 !important;
+}
