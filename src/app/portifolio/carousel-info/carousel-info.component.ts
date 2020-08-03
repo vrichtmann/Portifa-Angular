@@ -11,12 +11,12 @@ export class CarouselInfoComponent implements OnInit {
   @Input() plataform:string = "Unity 3D";
   @Input() description:string = "Jogo de Matemática";
   @Input() targetClass = "bs-example-modal-lg";
+  @Input() currentIndex:any[];
   @Input() youtubeVideo = "https://www.youtube.com/watch?v=hwvjX2OxXKg";
   yt = '<iframe class="w-100" src="https://www.youtube.com/embed/KS76EghdCcY?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
   youtubeUrl = 'https://www.youtube.com/watch?v=iHhcHTlGtRs';
-  constructor(private embedService: EmbedVideoService) {
 
-   }
+  constructor(private embedService: EmbedVideoService) {}
 
   ngOnInit() {
     // console.log("images : " + this.images);
